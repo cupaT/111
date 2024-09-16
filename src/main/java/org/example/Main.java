@@ -8,20 +8,25 @@ public class Main {
         //1
         int n = 500;
         List<String> result = sequence(n);
+        System.out.println("First:");
         System.out.println(result);
 
         //2
+        System.out.println("Second:");
         String str = "make install";
         System.out.println(reverseString(str));
 
         //3
+        System.out.println("Third:");
         double a = 1, b = -3, c = 2;
         System.out.println(quadraticRoots(a, b, c));
 
         //4
+        System.out.println("Fourth: ");
         System.out.println(calculateSeries(1e-6));
 
         //5
+        System.out.println("Fifth:");
         String str1 = "level";
         System.out.println(isPalindrome(str1));
     }
@@ -65,7 +70,7 @@ public class Main {
         double discriminant = b * b - 4 * a * c;
 
         if (discriminant < 0) {
-            return "нет вещественных корней";
+            return "No real roots";
         }
 
         double root1 = (-b + Math.sqrt(discriminant)) / (2 * a);

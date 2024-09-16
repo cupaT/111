@@ -55,7 +55,7 @@ class MainTest {
     @Test
     void quadraticRoots() {
         assertEquals("2.0, 1.0", Main.quadraticRoots(1, -3, 2));
-        assertEquals("нет вещественных корней", Main.quadraticRoots(1, 2, 5));
+        assertEquals("No real roots", Main.quadraticRoots(1, 2, 5));
     }
 
     @Test
